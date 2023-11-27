@@ -4,8 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+- main
 
+pr:
+- '*'
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
