@@ -10,9 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: self
-  persistCredentials: true
-
 - task: Maven@3
   inputs:
     mavenPomFile: 'app/pom.xml'

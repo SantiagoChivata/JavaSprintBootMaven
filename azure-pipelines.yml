@@ -18,6 +18,9 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
+- checkout: self
+  persistCredentials: true
+
 - stage: Build
   displayName: Build stage
   jobs:
